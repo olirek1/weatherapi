@@ -2,11 +2,13 @@ var Citydb = require('../model/model');
 
 
 exports.create = (req,res)=>{
+
     //validate request
     if(!req.body){
         res.status(400).send({ message : "content can not be empty"});
         return;
     }
+    // console.log(req);
     //create user
     const city = new Citydb({
         cityname : req.body.cityname

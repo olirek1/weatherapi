@@ -16,3 +16,6 @@ const connectDB = async()=>{
     }
 }
 module.exports = connectDB;
+
+
+// db connection sting for git check
